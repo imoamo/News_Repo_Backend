@@ -48,7 +48,7 @@ const sendNewsUpdate = (category, newArticle) => {
 app.get('/', (req, res) => res.send('✅ API Running'));
 
 // Routes
-const newsRoutes = require('./routes/news');
+const newsRoutes = require('./routes/news.js');
 app.use('/api/news', newsRoutes);
 
 // Start Server
